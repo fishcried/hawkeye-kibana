@@ -1,0 +1,16 @@
+{
+    "_id": "dbd-ops-overview", 
+    "_source": {
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+        }, 
+        "optionsJSON": "{\"darkTheme\":true}", 
+        "panelsJSON": "[{\"col\":1,\"id\":\"vsz-all-vavigation\",\"row\":1,\"size_x\":2,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"vsz-ops-bomb-by-paths\",\"row\":1,\"size_x\":6,\"size_y\":6,\"type\":\"visualization\"},{\"col\":7,\"id\":\"vsz-ops-bomb-by-api-top10\",\"row\":10,\"size_x\":6,\"size_y\":6,\"type\":\"visualization\"},{\"col\":3,\"id\":\"vsz-all-magic-cycle\",\"row\":1,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":4,\"id\":\"vsz-all-by-hosts\",\"row\":4,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":9,\"id\":\"vsz-ops-by-http-bytes\",\"row\":7,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"vsz-ops-by-http-codes\",\"row\":10,\"size_x\":3,\"size_y\":6,\"type\":\"visualization\"},{\"col\":1,\"id\":\"vsz-ops-by-levels\",\"row\":4,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":5,\"id\":\"vsz-ops-by-http-reponses\",\"row\":7,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":4,\"id\":\"vsz-ops-by-http-methods\",\"row\":10,\"size_x\":3,\"size_y\":6,\"type\":\"visualization\"},{\"col\":1,\"id\":\"vsz-all-by-types\",\"row\":7,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"id\":\"sch-openstack-entry\",\"type\":\"search\",\"size_x\":12,\"size_y\":3,\"col\":1,\"row\":16,\"columns\":[\"message\",\"loglevel\",\"path\",\"host\"],\"sort\":[\"@timestamp\",\"desc\"]}]", 
+        "timeRestore": false, 
+        "title": "dbd-ops-overview", 
+        "version": 1
+    }, 
+    "_type": "dashboard"
+}

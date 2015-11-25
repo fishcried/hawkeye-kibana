@@ -1,0 +1,13 @@
+{
+    "_id": "vsz-all-vavigation", 
+    "_source": {
+        "description": "", 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+        }, 
+        "title": "vsz-all-vavigation", 
+        "version": 1, 
+        "visState": "{\"type\":\"markdown\",\"params\":{\"markdown\":\"- [Overview](/app/kibana#/dashboard/dbd-ops-overview)\\n- [Debug   ](/app/kibana#/dashboard/dbd-ops-debug)\\n- [Nova    ](/app/kibana#/dashboard/dbd-nova)\\n- [Neutron ](/app/kibana#/dashboard/dbd-neutron)\\n- [Glance](/app/kibana#/dashboard/dbd-glance)\\n- [Cinder](/app/kibana#/dashboard/dbd-cinder)\\n- [Ceilometer](/app/kibana#/dashboard/dbd-ceilometer)\\n- [Keystone](/app/kibana#/dashboard/dbd-keystone)\\n- [Horizon](/app/kibana#/dashboard/dbd-horizon)\\n- [RabbitMq](/app/kibana#/dashboard/dbd-rabbitmq)\\n- [Sys Auth](/app/kibana#/dashboard/dbd-auth)\\n- [Hawkeye doc](/app/kibana#/dashboard/dbd-auth)\"},\"aggs\":[],\"listeners\":{}}"
+    }, 
+    "_type": "visualization"
+}

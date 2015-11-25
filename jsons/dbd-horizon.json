@@ -1,0 +1,16 @@
+{
+    "_id": "dbd-horizon", 
+    "_source": {
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"type:horizon\",\"analyze_wildcard\":true}}}]}"
+        }, 
+        "optionsJSON": "{\"darkTheme\":true}", 
+        "panelsJSON": "[{\"id\":\"vsz-all-vavigation\",\"type\":\"visualization\",\"size_x\":2,\"size_y\":4,\"col\":1,\"row\":1},{\"id\":\"sch-openstack-entry\",\"type\":\"search\",\"size_x\":12,\"size_y\":7,\"col\":1,\"row\":9,\"columns\":[\"message\",\"loglevel\",\"path\",\"host\"],\"sort\":[\"@timestamp\",\"desc\"]},{\"id\":\"vsz-ops-by-http-methods\",\"type\":\"visualization\",\"size_x\":6,\"size_y\":2,\"col\":3,\"row\":1},{\"id\":\"vsz-ops-by-http-codes\",\"type\":\"visualization\",\"size_x\":6,\"size_y\":2,\"col\":3,\"row\":3},{\"id\":\"vsz-horizon-action-by-users\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":4,\"col\":9,\"row\":1}]", 
+        "timeRestore": false, 
+        "title": "dbd-horizon", 
+        "version": 1
+    }, 
+    "_type": "dashboard"
+}

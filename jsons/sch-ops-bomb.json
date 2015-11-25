@@ -1,0 +1,23 @@
+{
+    "_id": "sch-ops-bomb", 
+    "_source": {
+        "columns": [
+            "message", 
+            "loglevel", 
+            "path", 
+            "host"
+        ], 
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"[logstash-openstack-]YYYY.MM\",\"query\":{\"query_string\":{\"query\":\"tags:openstack AND (tags:something_wrong OR http_response_code:4?? OR http_response_code:5??)\",\"analyze_wildcard\":true}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647},\"filter\":[]}"
+        }, 
+        "sort": [
+            "@timestamp", 
+            "desc"
+        ], 
+        "title": "sch-ops-bomb", 
+        "version": 1
+    }, 
+    "_type": "search"
+}

@@ -1,0 +1,552 @@
+[
+  {
+    "_id": "dbd-ops-debug",
+    "_type": "dashboard",
+    "_source": {
+      "title": "dbd-ops-debug",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"vsz-all-vavigation\",\"row\":1,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"vsz-ops-by-reqids\",\"row\":6,\"size_x\":5,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"message\",\"loglevel\",\"path\",\"host\"],\"id\":\"sch-openstack-entry\",\"row\":10,\"size_x\":12,\"size_y\":7,\"sort\":[\"@timestamp\",\"desc\"],\"type\":\"search\"},{\"col\":4,\"id\":\"vsz-ops-bomb-by-hosts\",\"row\":1,\"size_x\":4,\"size_y\":5,\"type\":\"visualization\"},{\"col\":8,\"id\":\"vsz-ops-bomb-by-paths\",\"row\":1,\"size_x\":5,\"size_y\":5,\"type\":\"visualization\"},{\"col\":1,\"id\":\"vsz-ops-bomb-by-types\",\"row\":4,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"id\":\"vsz-ops-bomb-by-api-top10\",\"type\":\"visualization\",\"size_x\":7,\"size_y\":4,\"col\":6,\"row\":6}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"tags:openstack AND (tags:something_wrong OR http_response_code:4?? OR http_response_code:5??)\"}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "dbd-ceilometer",
+    "_type": "dashboard",
+    "_source": {
+      "title": "dbd-ceilometer",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"id\":\"vsz-all-vavigation\",\"type\":\"visualization\",\"size_x\":2,\"size_y\":3,\"col\":1,\"row\":1},{\"id\":\"vsz-ops-api-top10\",\"type\":\"visualization\",\"size_x\":12,\"size_y\":4,\"col\":1,\"row\":9},{\"id\":\"vsz-ops-bomb-by-paths\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":6,\"col\":9,\"row\":1},{\"id\":\"vsz-all-by-hosts\",\"type\":\"visualization\",\"size_x\":3,\"size_y\":3,\"col\":3,\"row\":1},{\"id\":\"vsz-ops-by-http-bytes\",\"type\":\"visualization\",\"size_x\":6,\"size_y\":2,\"col\":1,\"row\":7},{\"id\":\"vsz-ops-by-http-codes\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":3,\"col\":5,\"row\":4},{\"id\":\"vsz-ops-by-http-methods\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":3,\"col\":1,\"row\":4},{\"id\":\"vsz-ops-by-http-reponses\",\"type\":\"visualization\",\"size_x\":6,\"size_y\":2,\"col\":7,\"row\":7},{\"id\":\"vsz-ops-by-levels\",\"type\":\"visualization\",\"size_x\":3,\"size_y\":3,\"col\":6,\"row\":1},{\"id\":\"sch-openstack-entry\",\"type\":\"search\",\"size_x\":12,\"size_y\":7,\"col\":1,\"row\":13,\"columns\":[\"message\",\"loglevel\",\"path\",\"host\"],\"sort\":[\"@timestamp\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"type:ceilometer\",\"analyze_wildcard\":true}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "dbd-keystone",
+    "_type": "dashboard",
+    "_source": {
+      "title": "dbd-keystone",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"id\":\"vsz-all-vavigation\",\"type\":\"visualization\",\"size_x\":2,\"size_y\":3,\"col\":1,\"row\":1},{\"id\":\"vsz-ops-api-top10\",\"type\":\"visualization\",\"size_x\":12,\"size_y\":4,\"col\":1,\"row\":9},{\"id\":\"vsz-ops-bomb-by-paths\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":6,\"col\":9,\"row\":1},{\"id\":\"vsz-all-by-hosts\",\"type\":\"visualization\",\"size_x\":3,\"size_y\":3,\"col\":3,\"row\":1},{\"id\":\"vsz-ops-by-http-bytes\",\"type\":\"visualization\",\"size_x\":6,\"size_y\":2,\"col\":1,\"row\":7},{\"id\":\"vsz-ops-by-http-codes\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":3,\"col\":5,\"row\":4},{\"id\":\"vsz-ops-by-http-methods\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":3,\"col\":1,\"row\":4},{\"id\":\"vsz-ops-by-http-reponses\",\"type\":\"visualization\",\"size_x\":6,\"size_y\":2,\"col\":7,\"row\":7},{\"id\":\"vsz-ops-by-levels\",\"type\":\"visualization\",\"size_x\":3,\"size_y\":3,\"col\":6,\"row\":1},{\"id\":\"sch-openstack-entry\",\"type\":\"search\",\"size_x\":12,\"size_y\":7,\"col\":1,\"row\":13,\"columns\":[\"message\",\"loglevel\",\"path\",\"host\"],\"sort\":[\"@timestamp\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"type:keystone\",\"analyze_wildcard\":true}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "dbd-neutron",
+    "_type": "dashboard",
+    "_source": {
+      "title": "dbd-neutron",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"id\":\"vsz-all-vavigation\",\"type\":\"visualization\",\"size_x\":2,\"size_y\":3,\"col\":1,\"row\":1},{\"id\":\"vsz-ops-api-top10\",\"type\":\"visualization\",\"size_x\":12,\"size_y\":4,\"col\":1,\"row\":9},{\"id\":\"vsz-ops-bomb-by-paths\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":6,\"col\":9,\"row\":1},{\"id\":\"vsz-all-by-hosts\",\"type\":\"visualization\",\"size_x\":3,\"size_y\":3,\"col\":3,\"row\":1},{\"id\":\"vsz-ops-by-http-bytes\",\"type\":\"visualization\",\"size_x\":6,\"size_y\":2,\"col\":1,\"row\":7},{\"id\":\"vsz-ops-by-http-codes\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":3,\"col\":5,\"row\":4},{\"id\":\"vsz-ops-by-http-methods\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":3,\"col\":1,\"row\":4},{\"id\":\"vsz-ops-by-http-reponses\",\"type\":\"visualization\",\"size_x\":6,\"size_y\":2,\"col\":7,\"row\":7},{\"id\":\"vsz-ops-by-levels\",\"type\":\"visualization\",\"size_x\":3,\"size_y\":3,\"col\":6,\"row\":1},{\"id\":\"sch-openstack-entry\",\"type\":\"search\",\"size_x\":12,\"size_y\":7,\"col\":1,\"row\":13,\"columns\":[\"message\",\"loglevel\",\"path\",\"host\"],\"sort\":[\"@timestamp\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"type:neutron\",\"analyze_wildcard\":true}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "dbd-glance",
+    "_type": "dashboard",
+    "_source": {
+      "title": "dbd-glance",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"id\":\"vsz-all-vavigation\",\"type\":\"visualization\",\"size_x\":2,\"size_y\":3,\"col\":1,\"row\":1},{\"id\":\"vsz-ops-api-top10\",\"type\":\"visualization\",\"size_x\":12,\"size_y\":4,\"col\":1,\"row\":9},{\"id\":\"vsz-ops-bomb-by-paths\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":6,\"col\":9,\"row\":1},{\"id\":\"vsz-all-by-hosts\",\"type\":\"visualization\",\"size_x\":3,\"size_y\":3,\"col\":3,\"row\":1},{\"id\":\"vsz-ops-by-http-bytes\",\"type\":\"visualization\",\"size_x\":6,\"size_y\":2,\"col\":1,\"row\":7},{\"id\":\"vsz-ops-by-http-codes\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":3,\"col\":5,\"row\":4},{\"id\":\"vsz-ops-by-http-methods\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":3,\"col\":1,\"row\":4},{\"id\":\"vsz-ops-by-http-reponses\",\"type\":\"visualization\",\"size_x\":6,\"size_y\":2,\"col\":7,\"row\":7},{\"id\":\"vsz-ops-by-levels\",\"type\":\"visualization\",\"size_x\":3,\"size_y\":3,\"col\":6,\"row\":1},{\"id\":\"sch-openstack-entry\",\"type\":\"search\",\"size_x\":12,\"size_y\":7,\"col\":1,\"row\":13,\"columns\":[\"message\",\"loglevel\",\"path\",\"host\"],\"sort\":[\"@timestamp\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"type:glance\",\"analyze_wildcard\":true}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "dbd-cinder",
+    "_type": "dashboard",
+    "_source": {
+      "title": "dbd-cinder",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"id\":\"vsz-all-vavigation\",\"type\":\"visualization\",\"size_x\":2,\"size_y\":3,\"col\":1,\"row\":1},{\"id\":\"vsz-ops-api-top10\",\"type\":\"visualization\",\"size_x\":12,\"size_y\":4,\"col\":1,\"row\":9},{\"id\":\"vsz-ops-bomb-by-paths\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":6,\"col\":9,\"row\":1},{\"id\":\"vsz-all-by-hosts\",\"type\":\"visualization\",\"size_x\":3,\"size_y\":3,\"col\":3,\"row\":1},{\"id\":\"vsz-ops-by-http-bytes\",\"type\":\"visualization\",\"size_x\":6,\"size_y\":2,\"col\":1,\"row\":7},{\"id\":\"vsz-ops-by-http-codes\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":3,\"col\":5,\"row\":4},{\"id\":\"vsz-ops-by-http-methods\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":3,\"col\":1,\"row\":4},{\"id\":\"vsz-ops-by-http-reponses\",\"type\":\"visualization\",\"size_x\":6,\"size_y\":2,\"col\":7,\"row\":7},{\"id\":\"vsz-ops-by-levels\",\"type\":\"visualization\",\"size_x\":3,\"size_y\":3,\"col\":6,\"row\":1},{\"id\":\"sch-openstack-entry\",\"type\":\"search\",\"size_x\":12,\"size_y\":7,\"col\":1,\"row\":13,\"columns\":[\"message\",\"loglevel\",\"path\",\"host\"],\"sort\":[\"@timestamp\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"type:cinder\",\"analyze_wildcard\":true}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "dbd-horizon",
+    "_type": "dashboard",
+    "_source": {
+      "title": "dbd-horizon",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"id\":\"vsz-all-vavigation\",\"type\":\"visualization\",\"size_x\":2,\"size_y\":4,\"col\":1,\"row\":1},{\"id\":\"sch-openstack-entry\",\"type\":\"search\",\"size_x\":12,\"size_y\":7,\"col\":1,\"row\":9,\"columns\":[\"message\",\"loglevel\",\"path\",\"host\"],\"sort\":[\"@timestamp\",\"desc\"]},{\"id\":\"vsz-ops-by-http-methods\",\"type\":\"visualization\",\"size_x\":6,\"size_y\":2,\"col\":3,\"row\":1},{\"id\":\"vsz-ops-by-http-codes\",\"type\":\"visualization\",\"size_x\":6,\"size_y\":2,\"col\":3,\"row\":3},{\"id\":\"vsz-horizon-action-by-users\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":4,\"col\":9,\"row\":1}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"type:horizon\",\"analyze_wildcard\":true}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "dbd-auth",
+    "_type": "dashboard",
+    "_source": {
+      "title": "dbd-auth",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"vsz-all-vavigation\",\"row\":1,\"size_x\":2,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"message\",\"loglevel\",\"path\",\"host\"],\"id\":\"sch-openstack-entry\",\"row\":5,\"size_x\":12,\"size_y\":7,\"sort\":[\"@timestamp\",\"desc\"],\"type\":\"search\"},{\"col\":3,\"id\":\"vsz-all-by-hosts\",\"row\":1,\"size_x\":3,\"size_y\":4,\"type\":\"visualization\"},{\"id\":\"vsz-auth-action-rhosts\",\"type\":\"visualization\",\"size_x\":3,\"size_y\":4,\"col\":6,\"row\":1},{\"id\":\"vsz-auth-action-users\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":4,\"col\":9,\"row\":1}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"type:auth\",\"analyze_wildcard\":true}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "dbd-nova",
+    "_type": "dashboard",
+    "_source": {
+      "title": "dbd-nova",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"id\":\"vsz-all-vavigation\",\"type\":\"visualization\",\"size_x\":2,\"size_y\":3,\"col\":1,\"row\":1},{\"id\":\"vsz-ops-api-top10\",\"type\":\"visualization\",\"size_x\":12,\"size_y\":4,\"col\":1,\"row\":9},{\"id\":\"vsz-ops-bomb-by-paths\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":6,\"col\":9,\"row\":1},{\"id\":\"vsz-all-by-hosts\",\"type\":\"visualization\",\"size_x\":3,\"size_y\":3,\"col\":3,\"row\":1},{\"id\":\"vsz-ops-by-http-bytes\",\"type\":\"visualization\",\"size_x\":6,\"size_y\":2,\"col\":1,\"row\":7},{\"id\":\"vsz-ops-by-http-codes\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":3,\"col\":5,\"row\":4},{\"id\":\"vsz-ops-by-http-methods\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":3,\"col\":1,\"row\":4},{\"id\":\"vsz-ops-by-http-reponses\",\"type\":\"visualization\",\"size_x\":6,\"size_y\":2,\"col\":7,\"row\":7},{\"id\":\"vsz-ops-by-levels\",\"type\":\"visualization\",\"size_x\":3,\"size_y\":3,\"col\":6,\"row\":1},{\"id\":\"sch-openstack-entry\",\"type\":\"search\",\"size_x\":12,\"size_y\":7,\"col\":1,\"row\":13,\"columns\":[\"message\",\"loglevel\",\"path\",\"host\"],\"sort\":[\"@timestamp\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"type:nova\",\"analyze_wildcard\":true}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "dbd-rabbitmq",
+    "_type": "dashboard",
+    "_source": {
+      "title": "dbd-rabbitmq",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"vsz-all-vavigation\",\"row\":1,\"size_x\":2,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"message\",\"loglevel\",\"path\",\"host\"],\"id\":\"sch-openstack-entry\",\"row\":5,\"size_x\":12,\"size_y\":7,\"sort\":[\"@timestamp\",\"desc\"],\"type\":\"search\"},{\"col\":3,\"id\":\"vsz-all-by-hosts\",\"row\":1,\"size_x\":5,\"size_y\":2,\"type\":\"visualization\"},{\"col\":3,\"id\":\"vsz-ops-by-levels\",\"row\":3,\"size_x\":5,\"size_y\":2,\"type\":\"visualization\"},{\"col\":8,\"id\":\"vsz-rabbitmq-action-sip\",\"row\":1,\"size_x\":5,\"size_y\":4,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"type:rabbitmq\"}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "dbd-ops-overview",
+    "_type": "dashboard",
+    "_source": {
+      "title": "dbd-ops-overview",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"vsz-all-vavigation\",\"row\":1,\"size_x\":2,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"vsz-ops-bomb-by-paths\",\"row\":1,\"size_x\":6,\"size_y\":6,\"type\":\"visualization\"},{\"col\":7,\"id\":\"vsz-ops-bomb-by-api-top10\",\"row\":10,\"size_x\":6,\"size_y\":6,\"type\":\"visualization\"},{\"col\":3,\"id\":\"vsz-all-magic-cycle\",\"row\":1,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":4,\"id\":\"vsz-all-by-hosts\",\"row\":4,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":9,\"id\":\"vsz-ops-by-http-bytes\",\"row\":7,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"vsz-ops-by-http-codes\",\"row\":10,\"size_x\":3,\"size_y\":6,\"type\":\"visualization\"},{\"col\":1,\"id\":\"vsz-ops-by-levels\",\"row\":4,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":5,\"id\":\"vsz-ops-by-http-reponses\",\"row\":7,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":4,\"id\":\"vsz-ops-by-http-methods\",\"row\":10,\"size_x\":3,\"size_y\":6,\"type\":\"visualization\"},{\"col\":1,\"id\":\"vsz-all-by-types\",\"row\":7,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"id\":\"sch-openstack-entry\",\"type\":\"search\",\"size_x\":12,\"size_y\":3,\"col\":1,\"row\":16,\"columns\":[\"message\",\"loglevel\",\"path\",\"host\"],\"sort\":[\"@timestamp\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "sch-all-entry",
+    "_type": "search",
+    "_source": {
+      "title": "sch-all-entry",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "message",
+        "loglevel",
+        "path",
+        "host"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"[logstash-openstack-]YYYY.MM\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "sch-ops-bomb",
+    "_type": "search",
+    "_source": {
+      "title": "sch-ops-bomb",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "message",
+        "loglevel",
+        "path",
+        "host"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"[logstash-openstack-]YYYY.MM\",\"query\":{\"query_string\":{\"query\":\"tags:openstack AND (tags:something_wrong OR http_response_code:4?? OR http_response_code:5??)\",\"analyze_wildcard\":true}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "sch-openstack-entry",
+    "_type": "search",
+    "_source": {
+      "title": "sch-ops-entry",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "message",
+        "loglevel",
+        "path",
+        "host"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n  \"index\": \"[logstash-openstack-]YYYY.MM\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"tags:openstack\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"highlight\": {\n    \"pre_tags\": [\n      \"@kibana-highlighted-field@\"\n    ],\n    \"post_tags\": [\n      \"@/kibana-highlighted-field@\"\n    ],\n    \"fields\": {\n      \"*\": {}\n    },\n    \"require_field_match\": false,\n    \"fragment_size\": 2147483647\n  },\n  \"filter\": []\n}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-ops-by-http-codes",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-ops-by-http-codes",
+      "visState": "{\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":true,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":true,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"type.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"row\":true}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"http_response_code.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "description": "",
+      "savedSearchId": "sch-openstack-entry",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-ops-by-http-methods",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-ops-by-http-methods",
+      "visState": "{\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":true,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":true,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"type.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"row\":true}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"http_method.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "description": "",
+      "savedSearchId": "sch-openstack-entry",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-all-by-types",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-ops-by-types",
+      "visState": "{\n  \"type\": \"area\",\n  \"params\": {\n    \"shareYAxis\": true,\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"smoothLines\": true,\n    \"scale\": \"linear\",\n    \"interpolate\": \"linear\",\n    \"mode\": \"overlap\",\n    \"times\": [],\n    \"addTimeMarker\": true,\n    \"defaultYExtents\": true,\n    \"setYExtents\": false,\n    \"yAxis\": {}\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {}\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"date_histogram\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"@timestamp\",\n        \"interval\": \"auto\",\n        \"customInterval\": \"2h\",\n        \"min_doc_count\": 1,\n        \"extended_bounds\": {}\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"type\": \"terms\",\n      \"schema\": \"group\",\n      \"params\": {\n        \"field\": \"type.raw\",\n        \"size\": 5,\n        \"order\": \"desc\",\n        \"orderBy\": \"1\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n  \"index\": \"[logstash-openstack-]YYYY.MM\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"tags:openstack\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-ops-by-levels",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-ops-by-levels",
+      "visState": "{\"type\":\"area\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"smoothLines\":true,\"scale\":\"linear\",\"interpolate\":\"linear\",\"mode\":\"overlap\",\"times\":[],\"addTimeMarker\":true,\"defaultYExtents\":true,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"loglevel.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"[logstash-openstack-]YYYY.MM\",\"query\":{\"query_string\":{\"query\":\"tags:openstack\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-ops-by-paths",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-ops-by-paths",
+      "visState": "{\"type\":\"area\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"smoothLines\":true,\"scale\":\"linear\",\"interpolate\":\"linear\",\"mode\":\"overlap\",\"times\":[],\"addTimeMarker\":true,\"defaultYExtents\":true,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"path.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"[logstash-openstack-]YYYY.MM\",\"query\":{\"query_string\":{\"query\":\"tags:openstack\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-all-magic-cycle",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-ops-magic-cycle",
+      "visState": "{\n  \"type\": \"pie\",\n  \"params\": {\n    \"shareYAxis\": true,\n    \"addTooltip\": true,\n    \"addLegend\": false,\n    \"isDonut\": false\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {}\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"terms\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"loglevel.raw\",\n        \"size\": 5,\n        \"order\": \"desc\",\n        \"orderBy\": \"1\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"type\": \"terms\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"type.raw\",\n        \"size\": 5,\n        \"order\": \"desc\",\n        \"orderBy\": \"1\"\n      }\n    },\n    {\n      \"id\": \"4\",\n      \"type\": \"terms\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"path.raw\",\n        \"size\": 5,\n        \"order\": \"desc\",\n        \"orderBy\": \"1\"\n      }\n    },\n    {\n      \"id\": \"5\",\n      \"type\": \"terms\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"host.raw\",\n        \"size\": 5,\n        \"order\": \"desc\",\n        \"orderBy\": \"1\"\n      }\n    }\n  ],\n  \"listeners\": {}\n}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n  \"index\": \"[logstash-openstack-]YYYY.MM\",\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"tags:openstack\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-ops-by-http-reponses",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-ops-by-http-reponses",
+      "visState": "{\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":true,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":true,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"http_response_time\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"api.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "description": "",
+      "savedSearchId": "sch-openstack-entry",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-ops-by-http-bytes",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-ops-by-http-bytes",
+      "visState": "{\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":true,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":true,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"http_request_bytes\"}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"api.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "description": "",
+      "savedSearchId": "sch-openstack-entry",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-ops-api-top10",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-ops-api-top10",
+      "visState": "{\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"http_response_time\"}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"http_url.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"http_response_code.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"http_method.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"5\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"http_request_bytes\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "description": "",
+      "savedSearchId": "sch-openstack-entry",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-ops-bomb-by-paths",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-ops-bomb-by-paths",
+      "visState": "{\"type\":\"area\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"smoothLines\":true,\"scale\":\"linear\",\"interpolate\":\"linear\",\"mode\":\"overlap\",\"times\":[],\"addTimeMarker\":true,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"path.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"4\",\"type\":\"filters\",\"schema\":\"split\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"loglevel:CRITICAL\",\"analyze_wildcard\":true}}},\"label\":\"\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"loglevel:ERROR\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"loglevel:WARNING\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"http_response_code:4??\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"http_response_code:5??\",\"analyze_wildcard\":true}}}}],\"row\":true}}],\"listeners\":{}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"[logstash-openstack-]YYYY.MM\",\"query\":{\"query_string\":{\"query\":\"tags:openstack AND (tags:something_wrong OR http_response_code:4?? OR http_response_code:5??)\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-ops-bomb-by-hosts",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-ops-bomb-by-hosts",
+      "visState": "{\"type\":\"area\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"smoothLines\":true,\"scale\":\"linear\",\"interpolate\":\"linear\",\"mode\":\"overlap\",\"times\":[],\"addTimeMarker\":true,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"host.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"4\",\"type\":\"filters\",\"schema\":\"split\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"loglevel:CRITICAL\",\"analyze_wildcard\":true}}},\"label\":\"\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"loglevel:ERROR\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"loglevel:WARNING\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"http_response_code:4??\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"http_response_code:5??\",\"analyze_wildcard\":true}}}}],\"row\":true}}],\"listeners\":{}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"[logstash-openstack-]YYYY.MM\",\"query\":{\"query_string\":{\"query\":\"tags:openstack AND (tags:something_wrong OR http_response_code:4?? OR http_response_code:5??)\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-ops-by-reqids",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-ops-by-reqids",
+      "visState": "{\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":true,\"defaultYExtents\":true,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"requestid.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"index\":\"[logstash-openstack-]YYYY.MM\",\"query\":{\"query_string\":{\"query\":\"tags:openstack\",\"analyze_wildcard\":true}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-ops-bomb-by-api-top10",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-ops-bomb-by-api-top10",
+      "visState": "{\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"http_url.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"http_response_code.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"http_method.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"index\":\"[logstash-openstack-]YYYY.MM\",\"query\":{\"query_string\":{\"query\":\"tags:openstack AND (tags:something_wrong OR http_response_code:4?? OR http_response_code:5??)\",\"analyze_wildcard\":true}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-ops-bomb-by-types",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-ops-bomb-by-types",
+      "visState": "{\"type\":\"area\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"smoothLines\":true,\"scale\":\"linear\",\"interpolate\":\"linear\",\"mode\":\"overlap\",\"times\":[],\"addTimeMarker\":true,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"type.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "description": "",
+      "savedSearchId": "sch-ops-bomb",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-horizon-action-by-user",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-horizon-action-by-user",
+      "visState": "{\"type\":\"area\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"smoothLines\":false,\"scale\":\"linear\",\"interpolate\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"user.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"log_action.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"row\":true}}],\"listeners\":{}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"[logstash-openstack-]YYYY.MM\",\"query\":{\"query_string\":{\"query\":\"type:horizon\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-rabbitmq-action-sip",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-rabbitmq-action-sip",
+      "visState": "{\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"log_action.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"row\":true}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"sip.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"[logstash-openstack-]YYYY.MM\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-auth-action-rhosts",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-auth-action-rhosts",
+      "visState": "{\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"log_action.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"row\":true}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"rhost.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"[logstash-openstack-]YYYY.MM\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-auth-action-users",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-auth-action-users",
+      "visState": "{\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"log_action.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"row\":true}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"user.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"[logstash-openstack-]YYYY.MM\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-horizon-action-by-users",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-horizon-action-by-users",
+      "visState": "{\"type\":\"area\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"smoothLines\":false,\"scale\":\"linear\",\"interpolate\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"user.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"log_action.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"row\":true}}],\"listeners\":{}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"[logstash-openstack-]YYYY.MM\",\"query\":{\"query_string\":{\"query\":\"type:horizon\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-all-vavigation",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-all-vavigation",
+      "visState": "{\"type\":\"markdown\",\"params\":{\"markdown\":\"- [Overview](/app/kibana#/dashboard/dbd-ops-overview)\\n- [Debug   ](/app/kibana#/dashboard/dbd-ops-debug)\\n- [Nova    ](/app/kibana#/dashboard/dbd-nova)\\n- [Neutron ](/app/kibana#/dashboard/dbd-neutron)\\n- [Glance](/app/kibana#/dashboard/dbd-glance)\\n- [Cinder](/app/kibana#/dashboard/dbd-cinder)\\n- [Ceilometer](/app/kibana#/dashboard/dbd-ceilometer)\\n- [Keystone](/app/kibana#/dashboard/dbd-keystone)\\n- [Horizon](/app/kibana#/dashboard/dbd-horizon)\\n- [RabbitMq](/app/kibana#/dashboard/dbd-rabbitmq)\\n- [Sys Auth](/app/kibana#/dashboard/dbd-auth)\\n- [Hawkeye doc](/app/kibana#/dashboard/dbd-auth)\"},\"aggs\":[],\"listeners\":{}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-all-by-hosts",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-all-by-hosts",
+      "visState": "{\"type\":\"area\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"smoothLines\":true,\"scale\":\"linear\",\"interpolate\":\"linear\",\"mode\":\"overlap\",\"times\":[],\"addTimeMarker\":true,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"host.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"[logstash-openstack-]YYYY.MM\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-ops-by-hosts",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-ops-by-hosts",
+      "visState": "{\"type\":\"area\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"smoothLines\":true,\"scale\":\"linear\",\"interpolate\":\"linear\",\"mode\":\"overlap\",\"times\":[],\"addTimeMarker\":true,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"host.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"[logstash-openstack-]YYYY.MM\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "vsz-ops-magic-cycle",
+    "_type": "visualization",
+    "_source": {
+      "title": "vsz-ops-magic-cycle",
+      "visState": "{\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"loglevel.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"3\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"type.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"4\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"path.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"5\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"host.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"[logstash-openstack-]YYYY.MM\",\"query\":{\"query_string\":{\"query\":\"tags:openstack\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  }
+]
