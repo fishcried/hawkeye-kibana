@@ -28,7 +28,8 @@ hawk-kibana是通过kibana定义相关的search,visualization,dashboard来对ope
 
 # search,visualization,dashaboard命名规则
 
-**<preffix>-[scope]-<desc>**
+**`<preffix>-[scope]-<desc>`**
+
 每个json文件通过上面的方式进行命名，方便管理。scope可以省略。
 
 - preffix
