@@ -7,7 +7,7 @@
             "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"type:auth\",\"analyze_wildcard\":true}}}]}"
         }, 
         "optionsJSON": "{\"darkTheme\":true}", 
-        "panelsJSON": "[{\"col\":1,\"id\":\"vsz-all-vavigation\",\"row\":1,\"size_x\":2,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"message\",\"loglevel\",\"path\",\"host\"],\"id\":\"sch-openstack-entry\",\"row\":5,\"size_x\":12,\"size_y\":7,\"sort\":[\"@timestamp\",\"desc\"],\"type\":\"search\"},{\"col\":3,\"id\":\"vsz-all-by-hosts\",\"row\":1,\"size_x\":3,\"size_y\":4,\"type\":\"visualization\"},{\"id\":\"vsz-auth-action-rhosts\",\"type\":\"visualization\",\"size_x\":3,\"size_y\":4,\"col\":6,\"row\":1},{\"id\":\"vsz-auth-action-users\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":4,\"col\":9,\"row\":1}]", 
+        "panelsJSON": "[{\"col\":1,\"id\":\"vsz-all-vavigation\",\"row\":1,\"size_x\":2,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"message\",\"loglevel\",\"path\",\"host\"],\"id\":\"sch-all-entry\",\"row\":5,\"size_x\":12,\"size_y\":7,\"sort\":[\"@timestamp\",\"desc\"],\"type\":\"search\"},{\"col\":3,\"id\":\"vsz-all-by-hosts\",\"row\":1,\"size_x\":3,\"size_y\":4,\"type\":\"visualization\"},{\"id\":\"vsz-auth-action-rhosts\",\"type\":\"visualization\",\"size_x\":3,\"size_y\":4,\"col\":6,\"row\":1},{\"id\":\"vsz-auth-action-users\",\"type\":\"visualization\",\"size_x\":4,\"size_y\":4,\"col\":9,\"row\":1}]", 
         "timeRestore": false, 
         "title": "dbd-auth", 
         "version": 1

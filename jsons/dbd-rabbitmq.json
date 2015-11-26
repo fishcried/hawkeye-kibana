@@ -7,7 +7,7 @@
             "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"type:rabbitmq\"}}}]}"
         }, 
         "optionsJSON": "{\"darkTheme\":true}", 
-        "panelsJSON": "[{\"col\":1,\"id\":\"vsz-all-vavigation\",\"row\":1,\"size_x\":2,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"message\",\"loglevel\",\"path\",\"host\"],\"id\":\"sch-openstack-entry\",\"row\":5,\"size_x\":12,\"size_y\":7,\"sort\":[\"@timestamp\",\"desc\"],\"type\":\"search\"},{\"col\":3,\"id\":\"vsz-all-by-hosts\",\"row\":1,\"size_x\":5,\"size_y\":2,\"type\":\"visualization\"},{\"col\":3,\"id\":\"vsz-ops-by-levels\",\"row\":3,\"size_x\":5,\"size_y\":2,\"type\":\"visualization\"},{\"col\":8,\"id\":\"vsz-rabbitmq-action-sip\",\"row\":1,\"size_x\":5,\"size_y\":4,\"type\":\"visualization\"}]", 
+        "panelsJSON": "[{\"col\":1,\"id\":\"vsz-all-vavigation\",\"row\":1,\"size_x\":2,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"message\",\"loglevel\",\"path\",\"host\"],\"id\":\"sch-all-entry\",\"row\":5,\"size_x\":12,\"size_y\":7,\"sort\":[\"@timestamp\",\"desc\"],\"type\":\"search\"},{\"col\":3,\"id\":\"vsz-all-by-hosts\",\"row\":1,\"size_x\":5,\"size_y\":2,\"type\":\"visualization\"},{\"col\":3,\"id\":\"vsz-ops-by-levels\",\"row\":3,\"size_x\":5,\"size_y\":2,\"type\":\"visualization\"},{\"col\":8,\"id\":\"vsz-rabbitmq-action-sip\",\"row\":1,\"size_x\":5,\"size_y\":4,\"type\":\"visualization\"}]", 
         "timeRestore": false, 
         "title": "dbd-rabbitmq", 
         "version": 1
