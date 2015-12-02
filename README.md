@@ -2,7 +2,7 @@
 
 hawkEye是一套依托于ELKstask对openstack日志进行可视化的系统。
 
-![screenshort](screenshort.png)
+![](https://github.com/fishcried/hawkeye-logstash/raw/master/screenshort.png)
 
 **目标**
 
